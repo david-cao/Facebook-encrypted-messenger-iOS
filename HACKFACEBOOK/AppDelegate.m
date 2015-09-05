@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *userAgentString = @"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10";
+    NSDictionary *dict2 = @{@"UserAgent" : userAgentString};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dict2];
+    
     return YES;
 }
 
